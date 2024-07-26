@@ -1,0 +1,237 @@
+<html>
+    <head>
+        <title>exchange</title>
+        <style>
+            .accordion{ margin: 60px auto; 
+                      width: 1100px; } 
+
+          .accordion li{ list-style: none;
+                        width: 100%; 
+                        margin: 20px;
+                        padding: 10px; 
+                        border-radius:8px ; 
+                        background: #e3edf7;
+                        box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), 
+                                    -6px -6px 10px -1px rgba(255,255,255,0.7); } 
+
+          .accordion li label{ display: flex;
+                              align-items: center; 
+                              padding: 10px; 
+                              font-size: 18px; 
+                              font-weight: 500;
+                              cursor: pointer; } 
+
+          label::before{ content: '+';
+                        margin-right: 10px; 
+                        font-size: 24px; 
+                        font-weight: 600; } 
+
+          input[type="radio"]{ display: none; } 
+
+          .accordion .content{ color: #555; 
+                              padding: 0 10 px;
+                              line-height: 26px; 
+                              max-height: 0;
+                              overflow: hidden;
+                              transition: max-height 0.5s,
+                              padding 0.5s; } 
+
+          .accordion input[type="radio"]:checked + label + .content{
+                                                                    max-height: 400px; 
+                                                                    padding: 10px 10px 20px; } 
+          .accordion input[type="radio"]:checked + label::before{ content: '-'; }
+        </style>
+    </head>
+
+    <body>
+
+        <div>
+            <div>
+                <img src="assets\48.png"  style="width: 100%;">
+            </div>
+
+            <div style="margin-top: -27%; margin-left: 10%; color: white;">
+                <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 500%;">EXCHANGE AT <br> MARUTI SUZUKI</h1>
+                <h2 style="margin-left: 2%;"><pre>CONVENIENT | TRANSPARENT | RELIABLE</pre></h2>
+            </div>
+        </div>
+
+        <div style="margin-top: 13%;align-items: center;margin-left: 25%;">
+            <div>
+                <p style="font-size: x-large;">REGISTER FOR EXCHANGE HERE</p>
+                <p style="font-size: large;">Please confirm your personal details</p>
+                <p>The fields marked as * are mandatory</p>
+            </div>
+
+            <form style="width: 70%;" target="_blank" autocomplete="on" novalidate>
+                
+                  <label for="name" class="form-label">FULL NAME</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1">
+               
+                
+                  <label for="ema" class="form-label">EMAIL</label>
+                  <input type="email" class="form-control" id="ema" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            
+                
+                    <label for="num" class="form-label">MOBILE NUMBER</label>
+                    <input type="tel" class="form-control" id="num" max="10">
+                 
+                
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">I agree that by clicking the ‘Submit’ button below, I am explicitly soliciting a call and message via whatsapp or any other medium from Maruti Suzuki India Ltd or its partners on my ‘Mobile’.</label><br>
+               
+                <br><button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+
+    <div style="margin-top: 3%; text-align: center;">
+        <h2>LET’S UNDERSTAND EXCHANGE AT</h2>
+        <h1 style="font-size: 650%;">MARUTI SUZUKI</h1><br>
+        <p style="margin-left: 10%;margin-right: 10%;">Selling an old car is a long and cumbersome process. The process further becomes stressful when you plan to buy a new car in exchange of your old car. Here comes the exchange process at Maruti Suzuki handy. We buy your old car in exchange for a new car. The old car can be of any manufacturer and manufactured in any year. To make the transaction easy, the value of the old car can be used towards the payment of new Maruti Suzuki car. The large network of Maruti Suzuki makes it easy for you to evaluate your old car. You can get it evaluated at any dealership of Maruti Suzuki. The exchange process does not end here. We also ensure that the old car is sold properly with complete documentation. Now that’s exchange for you: convenient, transparent and reliable.</p>
+    </div>
+
+
+    <div style="margin-top: 5%;">
+        <img src="assets\49.png" style="margin-left: 46%;">
+        <h2 style="text-align: center;margin-top: 2%;">EXCHANGING YOUR CAR IS REALLY SIMPLE!</h2>
+
+        <div style="width: 90%; padding: 70px; margin: 3%; display: inline-flex; float: left;">
+            <div style="margin-left: 15%;">
+                <img src="assets\50.png" width="120px" class="moving">
+                <h6 style="margin-left: -7%;">COMPETITIVE PRICING<br>
+                    USING DIGITAL EVALUATION</h6>
+            </div>
+
+            <div style="margin-left: 15%;">
+                <img src="assets\51.png" width="120px"class="moving">
+                <h6 style="margin-left: -7%;">HASSLE FREE<br>
+                    DOCUMENTATION</h6>
+            </div>
+
+            <div style="margin-left: 15%;">
+                <img src="assets\52.png" width="120px"class="moving">
+                <h6 style="margin-left: -7%;">ATTRACTIVE EXCHANGE<br>
+                    BENEFITS ON NEW CAR</h6>
+            </div>
+
+          </div>
+
+    </div>
+
+    <div>
+        <h2  style="text-align: center;">LET’S UNDERSTAND EXCHANGE AT</h2>
+
+        <div >
+            <ul class="accordion">
+              <li>
+                <input type="radio" name="accordian" id ="first" checked>
+                <label for="first">1-What is the complete process of exchange</label>
+                <div class="content">
+                    <p>Bring your existing car at any Maruti Suzuki dealership for Evaluation</p>
+                <p>Evaluation is carried out by expert using digital App on 376 check points</p>
+                <p>Based on the digital evaluation report the price of your car is determined and quoted</p>
+                <p>Once the price is agreed upon, the car needs to be handed over to the dealership along with 2 keys and documents*</p>
+                <p>A certificate of undertaking (purchase agreement) along with receipt of old car payment is issued.</p>
+                <p>The Price as agreed upon for the old car can be adjusted against the price of new car</p>
+                <p>Existing customer is intimated about the status of sale of old car on regular basis.</p>
+            </div>
+              </li>
+
+              <li>
+                <input type="radio" name="accordian" id ="second" >
+                <label for="second">2-What are the documents that are required during the exchange process</label>
+                <div class="content">
+                    <p><b>1.</b> Address proof</p>
+                    <p><b>2.</b> 2 passport size photographs</p>
+                    <p><b>3.</b> Proof of identity (Passport, Pan Card, Aadhar Card, Driving License, etc)</p>
+                    <p><b>4.</b> Original invoice and Valid Insurance</p>
+                    <p><b>5.</b> Original RC</p>
+                    <p><b>6.</b> Owner’s manual</p>
+                    <p><b>7.</b> Duly Signed Form 29 & 30</p>
+                    <p><b>8.</b> Bank Hypothecation closure statement and Form 35</p>
+                
+                </div>
+              </li>
+
+              
+            </ul>
+          </div>
+    </div>
+
+
+    <div style="background-color: rgb(54, 43, 43); width: 100%; display: inline-flex; float: left;">
+        <div style="width: 25%;  margin: 20px 30px 30px 10px; color: white;">
+            <h2>REACH US</h2>
+            <p>2760 SALES OUTLETS IN INDIA DISTRIBUTED<br> ACROSS 2313 CITIES<br>
+
+                TILL 1ST FEB’23</p>
+
+                <div style="margin-left: -2%;">
+                    <button class="btn btn-light m-2">LOCATE A DEALER</button>
+                    <button class="btn btn-light">BOOK SHOWROOM VISIT</button>
+                </div>    
+        </div>
+
+        <div style="width: 15%;  margin: 20px 30px 30px 10px; color: white;">
+            <h6>CORPORATE</h6>
+            <a>About Us</a>
+            <P>Investors</P>
+            <P>careers</P>
+            <P>Media</P>
+            <P>Reach Us</P>        
+        </div>
+
+        <div style="width: 15%;  margin: 20px 30px 30px 10px; color: white;">
+            <h6>SALES</h6>
+            <P>MARUTI SUZUKI ARENA Us</P>
+            <P>Nexa</P>
+            <P>True Value</P>
+            <P>Commercial</P>
+        </div>
+
+        <div style="width: 15%;  margin: 20px 30px 30px 10px; color: white;">
+            <h6>MORE FROM US</h6>
+            <P>Maruti Suzuki Driving School</P>
+            <P>Maruti Suzuki Smart Finance</P>
+            <P>Maruti Suzuki Insurance Broking</P>
+            <P>Maruti Suzuki Rewards</P>
+            <P>Maruti Suzuki Genuine Accessories</P>
+            <P>Maruti Suzuki Genuine Parts</P>
+            <P>Maruti Suzuki Leasing</P>
+            <P>Maruti Suzuki Customers</P>
+            <P>Maruti Suzuki Subscribe</P>
+        </div>
+
+        <div style="width: 25%;  margin: 20px 30px 30px 10px; color: white; text-align: end;">
+            <h5>1800 102 1800</h5>
+            <h5>contact@maruti.co.in</h5>
+
+            <div style="display: inline-flex; float: left; margin-left: 43%;">
+                <i class="bi bi-whatsapp" style="font-size: xx-large;"></i>
+                <i class="bi bi-apple" style="font-size: xx-large; padding-left: 10px;"></i>
+                <i class="bi bi-envelope-paper" style="font-size: xx-large;padding-left: 10px;"></i>
+                <i class="bi bi-facebook" style="font-size: xx-large;padding-left: 10px;"></i>
+                <i class="bi bi-twitter-x" style="font-size: xx-large;padding-left: 10px;"></i>
+            </div>
+
+            <div style="display: inline-flex; float: left;width: 100%;">
+                <div style=" text-align: end;margin-left: 43%;padding: 10px;">
+                    <p>SCAN TO CHAT <br>WITH US</p>
+                </div>
+
+                <div style="margin-left: 3%;">
+                    <img src="assets\17.webp" style="width: 100px;">
+                </div>
+            </div>
+        </div>
+   </div>
+
+   <div style="background-color: black; color: white; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; display: inline-flex;width: 100%;" >
+    <div style="padding: 20px;">
+        <h6>@ MARUTI SUZUKI INDIA LIMITED</h6>
+    </div>
+   </div>
+        
+    </body>
+</html>

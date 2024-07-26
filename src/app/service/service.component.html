@@ -1,0 +1,282 @@
+<html>
+    <head>
+        <title>services</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <style>
+ 
+          .accordion{ margin: 60px auto; 
+                      width: 600px; } 
+
+          .accordion li{ list-style: none;
+                        width: 100%; 
+                        margin: 20px;
+                        padding: 10px; 
+                        border-radius:8px ; 
+                        background: #e3edf7;
+                        box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), 
+                                    -6px -6px 10px -1px rgba(255,255,255,0.7); } 
+
+          .accordion li label{ display: flex;
+                              align-items: center; 
+                              padding: 10px; 
+                              font-size: 18px; 
+                              font-weight: 500;
+                              cursor: pointer; } 
+
+          label::before{ content: '+';
+                        margin-right: 10px; 
+                        font-size: 24px; 
+                        font-weight: 600; } 
+
+          input[type="radio"]{ display: none; } 
+
+          .accordion .content{ color: #555; 
+                              padding: 0 10 px;
+                              line-height: 26px; 
+                              max-height: 0;
+                              overflow: hidden;
+                              transition: max-height 0.5s,
+                              padding 0.5s; } 
+
+          .accordion input[type="radio"]:checked + label + .content{
+                                                                    max-height: 400px; 
+                                                                    padding: 10px 10px 20px; } 
+          .accordion input[type="radio"]:checked + label::before{ content: '-'; }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 3"></button>
+
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets\18.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets\19.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets\20.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets\21.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets\22.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets\23.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets\24.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets\25.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets\26.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets\27.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div style="display: inline-flex; float: left; width: 100%;">
+            <div style="margin: 2%; background-color: rgb(245, 238, 238);padding: 0.5%; width: 30%;">
+              <h2>ABOUT US</h2>
+              <p>Giving your car the service it deserves, Maruti Suzuki Service<br>has an extensive service network that spans across more than<br>1800 cities in India, making it easily accessible for <br>customers.Book a service appointment for your car at your <br>nearest Maruti Suzuki authorized service centre, and avail <br>numerous benefits like quality service by certified and expert <br>technicians, genuine Maruti Suzuki parts and accessories, <br>transparent evaluation and technology-driven solutions. With <br>stringent sanitisation and quality checks in place, we take good <br>care of your car at<b> Maruti Suzuki Service.</b>  Explore our range <br>of services like Extended warranty, <b>Roadside assistance to </b><br>know more.</p>
+            </div>
+
+            <div style="margin: 2%;width: 20%;">
+              <img src="assets\28.png" style="width: 143%;" >
+            </div>
+
+            <div style="margin: 2%; width: 20%; margin-left: 11%;">
+              <img src="assets\29.jpg" style="width: 143%;" >
+            </div>
+
+          </div>
+
+          <div style="display: inline-flex; float: left; width: 100%;">
+              <div style="margin: 2%;width: 29.5%;margin-top: -0.5%;">
+                <img src="assets\30.jpg" style="width: 150%;" >
+              </div>
+
+              <div style="margin: 2%;width: 80%;margin-top: 3%;margin-left: 18%;">
+                <h1>WHY CHOOSE US</h1>
+                <P style="word-spacing: 1%; margin-top: 2%;">Maruti Suzuki is a reliable and trusted brand known for its transparency and commitment to excellence. At Maruti <br>Suzuki Authorised Service Centre, we have skilled manpower who possess in-depth knowledge of Maruti Suzuki cars. <br>This helps us ensure better customer satisfaction by delivering high-quality car service in a timely manner. <br>Furthermore, Maruti Suzuki’s vast service network extends a strong sense of assurance to its customers and also <br>provides the convenience of doorstep pickup and delivery for car servicing. And to elevate the overall car ownership <br>experience, Maruti Suzuki offers loyalty and reward programs which can be redeemed at Maruti Suzuki Authorised <br>Service Centre’s. Download the Maruti Suzuki Rewards app to avail these rewards and avail additional savings.</P>
+              </div>
+          </div>
+
+          <div style="margin: 2%;">
+            <iframe width="100%" height="515" src="https://www.youtube.com/embed/1lIR-_U3flU?si=CRjKlTp-9lCnFnn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>          
+          </div>
+
+          
+
+            <div >
+              <h1 style="margin: 3%;">Service Related Quetions</h1>
+              <ul class="accordion">
+                <li>
+                  <input type="radio" name="accordian" id ="first" checked>
+                  <label for="first">Why should i get my car serviced at Maruti Suzuki Service?</label>
+                  <div class="content">
+                    <p>Choosing Maruti Suzuki Service for your car maintenance or servicing offers several benefits. Our experienced technicians follow proper guidelines to ensure quality of the service. Apart from this, you can rest be assured that only genuine parts will be used (if required) to fix your car. Getting your car serviced from an Authorised Maruti Suzuki Service centre also ensures your vehicle warranty stays intact.</p>
+                  </div>
+                </li>
+  
+                <li>
+                  <input type="radio" name="accordian" id ="second" >
+                  <label for="second">How do i make a service booking at Maruti Suzuki Servie?</label>
+                  <div class="content">
+                    <p>You can book a service appointment at Maruti Suzuki Service online on our website. You can also use your Maruti Suzuki Rewards app (Android & iOS) to book a service appointment for your car. Using Maruti Suzuki’s online booking service allows you to book the service appointment according to your convenience.</p>
+                  </div>
+                </li>
+  
+                <li>
+                  <input type="radio" name="accordian" id ="third">
+                  <label for="third">Where to find Maruti Suzuki Authorised station?</label>
+                  <div class="content">
+                    <p>Kindly use our Workshop locator present on Maruti Suzuki webpage to find a Maruti Suzuki authorised service station near you.</p>
+                  </div>
+                </li>
+  
+                <li>
+                  <input type="radio" name="accordian" id ="forth">
+                  <label for="forth">How much is a periodic servicing going to cost me?</label>
+                  <div class="content">
+                    <p>Cost of service varies according to car model, average running of the car and its current odometer reading. To calculate an estimated cost of service for your vehicle visit our Maruti Suzuki Service webpage. You may also check the same in Maruti Suzuki Rewards app (Android & iOS).</p>
+                  </div>
+                </li>
+  
+                <li>
+                  <input type="radio" name="accordian" id ="fifth">
+                  <label for="fifth">What are the terms & conditions for service camp?</label>
+                  <div class="content">
+                    <p>The T&C for Service Camp can be <a href=""style="text-decoration: none;">downloaded here</a>.</p>
+                  </div>
+                </li>
+  
+                <li>
+                  <input type="radio" name="accordian" id ="sixth">
+                  <label for="sixth">What are the terms & conditions for Ads?</label>
+                  <div class="content">
+                    <p>The T&C for Ads can be <a href="" style="text-decoration: none;">downloaded here</a>.</p>
+                  </div>
+                </li>
+  
+                <li>
+                  <input type="radio" name="accordian" id ="sevanth">
+                  <label for="sevanth">How do i know my car needs servicing?</label>
+                  <div class="content">
+                    <p>If your vehicle is running rough, is delivering low mileage, or if warning lamps have switched on, you should take your car immediately to a service centre. Apart from this, the schedule that you should follow for regular preventive maintenance will be listed in your owner’s manual.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+
+            <div style="background-color: rgb(54, 43, 43); width: 100%; display: inline-flex; float: left;">
+              <div style="width: 25%;  margin: 20px 30px 30px 10px; color: white;">
+                  <h2>REACH US</h2>
+                  <p>2760 SALES OUTLETS IN INDIA DISTRIBUTED<br> ACROSS 2313 CITIES<br>
+      
+                      TILL 1ST FEB’23</p>
+      
+                      <div style="margin-left: -2%;">
+                          <button class="btn btn-light m-2">LOCATE A DEALER</button>
+                          <button class="btn btn-light">BOOK SHOWROOM VISIT</button>
+                      </div>    
+              </div>
+      
+              <div style="width: 15%;  margin: 20px 30px 30px 10px; color: white;">
+                  <h6>CORPORATE</h6>
+                  <a>About Us</a>
+                  <P>Investors</P>
+                  <P>careers</P>
+                  <P>Media</P>
+                  <P>Reach Us</P>        
+              </div>
+      
+              <div style="width: 15%;  margin: 20px 30px 30px 10px; color: white;">
+                  <h6>SALES</h6>
+                  <P>MARUTI SUZUKI ARENA Us</P>
+                  <P>Nexa</P>
+                  <P>True Value</P>
+                  <P>Commercial</P>
+              </div>
+      
+              <div style="width: 15%;  margin: 20px 30px 30px 10px; color: white;">
+                  <h6>MORE FROM US</h6>
+                  <P>Maruti Suzuki Driving School</P>
+                  <P>Maruti Suzuki Smart Finance</P>
+                  <P>Maruti Suzuki Insurance Broking</P>
+                  <P>Maruti Suzuki Rewards</P>
+                  <P>Maruti Suzuki Genuine Accessories</P>
+                  <P>Maruti Suzuki Genuine Parts</P>
+                  <P>Maruti Suzuki Leasing</P>
+                  <P>Maruti Suzuki Customers</P>
+                  <P>Maruti Suzuki Subscribe</P>
+              </div>
+      
+              <div style="width: 25%;  margin: 20px 30px 30px 10px; color: white; text-align: end;">
+                  <h5>1800 102 1800</h5>
+                  <h5>contact@maruti.co.in</h5>
+      
+                  <div style="display: inline-flex; float: left; margin-left: 43%;">
+                      <i class="bi bi-whatsapp" style="font-size: xx-large;"></i>
+                      <i class="bi bi-apple" style="font-size: xx-large; padding-left: 10px;"></i>
+                      <i class="bi bi-envelope-paper" style="font-size: xx-large;padding-left: 10px;"></i>
+                      <i class="bi bi-facebook" style="font-size: xx-large;padding-left: 10px;"></i>
+                      <i class="bi bi-twitter-x" style="font-size: xx-large;padding-left: 10px;"></i>
+                  </div>
+      
+                  <div style="display: inline-flex; float: left;width: 100%;">
+                      <div style=" text-align: end;margin-left: 43%;padding: 10px;">
+                          <p>SCAN TO CHAT <br>WITH US</p>
+                      </div>
+      
+                      <div style="margin-left: 3%;">
+                          <img src="assets\17.webp" style="width: 100px;">
+                      </div>
+                  </div>
+              </div>
+         </div>
+      
+         <div style="background-color: black; color: white; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; display: inline-flex;width: 100%;" >
+          <div style="padding: 20px;">
+              <h6>@ MARUTI SUZUKI INDIA LIMITED</h6>
+          </div>
+         </div>
+          
+          
+    </body>
+</html>
